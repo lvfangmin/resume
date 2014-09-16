@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Fangmin} % Your first name
+\familyname{Lv} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\mobile{+86 18612283744}
+\email{lvfangmin@gmail.com}
+% \address{123 Broadway}{City, State 12345}
+% \phone{(000) 111 1112}
+% \fax{(000) 111 1113}
+% \email{john@smith.com}
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{additional information}
+% \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith}
+
+\nopagenumbers{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace{-1.0\baselineskip}
+\section{Education}
+\cventry{2005--2009}{BA in Computer Science}{}{\textsc{Zhe Jiang University}}{GPA: 3.4}{}
+\cventry{2009--2012}{MS in Computer Science and Technology}{}{\textsc{Zhe Jiang University}}{GPA: 3.6}{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+% \subsection{Vocational}
+
+\cventry{2012--Present}{Yahoo!}{Software Engineer}{}{Cloud Platform}
+{
+Designed the core components of OnePush which provides unified notification service for Yahoo! Apps. Use consistent hash to partition the data to provide the incremental scalability and uniform load distribution. Built the availability monitor to diagnose the health of the service. Improved the team velocity through establishing a Test and Behavior Driven culture.
+\newline{}\newline{}
+Handled billons of notifications per month, adopted by most Yahoo! Apps.\newline{}
+Achieved \textsc{Great Exceed} evaluation in three consecutive quarters, promoted to technical leader in Fall 2013, led 4 engineers.
+}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Open Source Projects}
+
+\cventry{2012--2013}{Apache BookKeeper}{Distributed Logging Service}{Contributor}{}
+{
+Redesigned the garbage collector solutions, code to support pluggable garbage collector(gc) algorithms, improved original gc algorithm; Fix various bugs reported by users.
+\newline{}
+}
+
+\cventry{2013}{Eclim}{Vim Plugin}{Contributor}{}
+{
+Significantly improved the efficiency to programming scala in vim by access Eclipse's features.
+}
+
+\section{Personal Projects}
+\cvitem{2012}{Blog based on Nodejs and Git, build for team to share knowledge.}
+\cvitem{2013}{Realtime bitcoin price/exchange rate alert service, based on Crawler, Lucene, ActiveMQ, Play framework.}
+\cvitem{2014}{Track and monitor any interesting web pages with easy to use chrome plugin.}
+% Currently, most apps send notifications to provide the latest information, e.g. user will receive notifications when somebody post a new image on flickr, or sent you a new email.  Most of the time, the notifications are useful, but the defect is that customers could not customize which one to receive.  Also, users may want to receive notifications on website which doesn&amp;#39;t support notifications or even does not have apps.  AnyPush gives the flexible to user, you can track and monitor any interesting web pages, even the specified elements of the page. For example: 1. follow the stock price, send notifications when the price meet the conditions you set before. 2. monitor the sports point, or article release without checking it manually. 3. monitor dist package updating 4. ...  Anyway, it is powerful, flexible and easy to be used, you could have a try.
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2014}{Hackday winner, win as the most popular hack voted by Yahoos!}
+% As more and more people have multiple devices, Yahoo! applications demand multi device user experience to increase user engagement. Multi-device systems include a variety of devices, where each device provides services that make the best use of its unique capabilities. A smartphone is more convenient than a large monitor for a touch user interface, but a large monitor works better for displaying information. Our hack is to provide a convenient solution [Click] to sync data among device and apps through OnePush platform.
+\cvitem{2014}{Recipient of Kongfu award, given to the top software engineer, who made great contribution to the Beijing center.}
+
+\section{Skills}
+
+\cvitem{Domain}{Distributed Systems, Big Data, Large-scale server}
+\cvitem{Languages}{Java, C++, Nodejs, Scala, PHP, Shell, VIMScript}
+\cvitem{Favorites}{Vim, GitHub, Jenkins, Gdb, Linux}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Languages}
+%
+% \cvitemwithcomment{English}{Mothertongue}{}
+% \cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+% \cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Interests}
+%
+% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+% \cvlistdoubleitem{Piano}{Chess}
+% \cvlistdoubleitem{Cooking}{Dancing}
+% \cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+% \clearpage
+%
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+% \makelettertitle % Print letter title
+%
+% \lipsum[1-3] % Dummy text
+%
+% \makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
